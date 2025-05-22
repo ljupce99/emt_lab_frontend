@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Route} from "react-router";
+import {Link} from "react-router";
 import {AppBar, Box, Button, IconButton, Toolbar, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -10,6 +10,8 @@ const pages = [
     {"path": "/country", "name": "country"},
     {"path": "/host", "name": "host"},
     {"path": "/accommodation", "name": "accommodation"},
+    {"path": "/reservation", "name": "reservation"},
+
 ];
 
 const Header = () => {
@@ -49,6 +51,9 @@ const Header = () => {
                     </Button>
                     <Button color="primary" onClick={() => navigate("/accommodation")}>
                         Accommodation
+                    </Button>
+                    <Button color="primary" onClick={() => navigate("/reservation")}>
+                        Reservation
                     </Button>
                 </Toolbar>
             </AppBar>

@@ -97,3 +97,5 @@ const EditAccommodationDialog = ({open, onClose, onEdit,accommodation}) => {
 };
 
 export default EditAccommodationDialog;
+
+

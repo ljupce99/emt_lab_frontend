@@ -1,10 +1,11 @@
 import React from 'react';
-import {Box, Container, Typography} from "@mui/material";
+import {Box, Button, Container, Typography} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 
 
 const HomePage = () => {
-
+    const navigate = useNavigate();
     return (
         <>
             <Box sx={{m:0, p:0}}>
@@ -17,6 +18,9 @@ const HomePage = () => {
 
                     </Typography>
                 </Container>
+                <Button color="primary" onClick={() => navigate("/reservation")}>
+                    Reservation
+                </Button>
             </Box>
 
 

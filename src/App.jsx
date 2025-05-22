@@ -5,6 +5,7 @@ import HostPage from "./ui/pages/hostPage/hostPage.jsx";
 import AccommodationPage from "./ui/pages/accommodationPage/accommodationPage.jsx";
 import HomePage from "./ui/pages/homePage/homePage.jsx";
 import Layout from "./ui/Layout/Layout.jsx";
+import ReservationPage from "./ui/pages/reservationPage/reservationPage.jsx";
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/reservation" element={<ReservationPage />} />
 
                     <Route path="/country" element={<CountryPage />} />
                     <Route path="/host" element={<HostPage />} />
